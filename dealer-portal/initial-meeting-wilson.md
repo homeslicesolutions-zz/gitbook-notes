@@ -18,21 +18,20 @@
 	*  `wilsonf@fair.com` with password: `password`
 
 ### Main bugs:
-* Web: Orders: All the table lists don’t have pagination hooked up
+* Web: Orders: All the table lists don't have pagination hooked up
 * Web: Super User: List needs have better UX for filtering
 * Dev Env: Webpack: Hot reload is not working
 * Dev Env: NPM: Fix Vulnerable dependencies
 
 ### Nice to haves:
-* Fix "Blueprint" feature
-* Documents => Reorganizing Documents data structure
-* Serialize to Camel Casing in all data structure
-* Fix Hot Reloading 
-* GRPC-Web
+* Dev Env: Fix "Blueprint" feature
+* Web: Redux: Documents => Reorganizing Documents data structure
+* Web: Redux: Serialize to Camel Casing in all data structure 
+* Web & BE: Refactor to use GRPC-Web
 
 ### SF Suggestions:
-* Add JS Doc
-* Switch from Mocha to Jest for Snapshot Test and Coverage Report
+* Web: Add JS Doc
+* Web: Switch from Mocha to Jest for Snapshot Test and Coverage Report
 
 ## Deployment 
 ### Understanding branch nomenclature 
@@ -90,7 +89,7 @@
 	1. Go to the webpage to see if it’s up 
 	2. Check the Pods if they’re up and running 
 		1.  `fair login` 
-		2. 16. 16. `kubectl get pods | grep dealer-portal` 
+		2. `kubectl get pods | grep dealer-portal` 
 16. Post-Release Reconciliation 
 	1.  `git flow release finish [version]`
 		1. Merges to local Master and Dev 
